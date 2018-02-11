@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: eureka-server
+
+---
+spring:
+  profiles: default-inst1
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true
+
+---
+spring:
+  profiles: default-inst2
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true
+
+---
+spring:
+  profiles: dev-inst1
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true
+
+---
+spring:
+  profiles: dev-inst2
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true
+
+---
+spring:
+  profiles: prod-inst1
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true
+
+---
+spring:
+  profiles: prod-inst2
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: master
+      fail-fast: true

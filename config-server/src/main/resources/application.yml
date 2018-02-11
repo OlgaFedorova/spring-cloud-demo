@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      enabled: false
+      failFast: true
+      label: master
+      server:
+        git:
+          uri: https://github.com/OlgaFedorova/spring-cloud-config
+          search-paths: '{application}'
+  application:
+    name: config-server
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+management:
+  security:
+    enabled: false

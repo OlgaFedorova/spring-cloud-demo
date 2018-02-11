@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: eureka-service-ofedorova
+
+
+---
+spring:
+  profiles: default
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://10.116.92.106:8888}
+      fail-fast: true
+      label: master
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://10.116.92.106:8888}
+      fail-fast: true
+      label: master
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://10.116.92.106:8888}
+      fail-fast: true
+      label: master
