@@ -1,6 +1,6 @@
 spring:
   application:
-      name: hello-service
+    name: admin-server
 
 ---
 spring:
@@ -8,8 +8,8 @@ spring:
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
-      fail-fast: true
       label: master
+      fail-fast: true
 
 ---
 spring:
@@ -17,8 +17,9 @@ spring:
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
-      fail-fast: true
       label: master
+      fail-fast: true
+
 
 ---
 spring:
@@ -26,5 +27,6 @@ spring:
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
-      fail-fast: true
       label: master
+      fail-fast: true
+

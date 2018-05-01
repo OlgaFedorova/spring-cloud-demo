@@ -1,7 +1,10 @@
 
 
 dependencies {
-	compile("org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}")
-	compile ("org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}")
+	compile("org.springframework.cloud:spring-cloud-starter-eureka")
+	compile ("org.springframework.cloud:spring-cloud-starter-config")
+
+	compile project(':log-config')
+	compile project(':common')
 }
 

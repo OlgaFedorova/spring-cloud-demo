@@ -1,7 +1,13 @@
 rootProject.name = 'spring-cloud-demo'
 
+include 'common'
+include 'account-service'
 include 'hello-service'
-include 'config-server'
-include 'gateway-service'
-include 'eureka-server'
+include 'log-config'
+include 'tools'
+include 'tools:admin-server'
+include 'tools:config-server'
+include 'tools:gateway-service'
+include 'tools:eureka-server'
+include 'feign-demo'
 

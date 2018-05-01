@@ -1,0 +1,8 @@
+bootRepackage.enabled = false
+bootRun.enabled = false
+
+subprojects{
+    dependencies{
+        compile project(':log-conf')
+    }
+}

@@ -1,6 +1,7 @@
 spring:
   application:
-      name: hello-service
+      name: account-service
+
 
 ---
 spring:

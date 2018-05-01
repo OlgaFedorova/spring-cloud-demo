@@ -1,0 +1,6 @@
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-feign'
+}
+
+bootRepackage.enabled = false
+bootRun.enabled = false
