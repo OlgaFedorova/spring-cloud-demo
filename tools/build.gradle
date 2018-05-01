@@ -3,6 +3,6 @@ bootRun.enabled = false
 
 subprojects{
     dependencies{
-        compile project(':log-conf')
+        compile project(':log-config')
     }
 }

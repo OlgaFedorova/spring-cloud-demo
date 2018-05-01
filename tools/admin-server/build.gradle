@@ -6,3 +6,6 @@ dependencies {
     compile "de.codecentric:spring-boot-admin-server-ui-hystrix"
     compile "de.codecentric:spring-boot-admin-server-ui-activiti"
 }
+
+apply plugin: 'application'
+mainClassName = 'ofedorova.AdminServerApplication'

@@ -3,3 +3,6 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-eureka")
     compile("org.springframework.cloud:spring-cloud-config-server")
 }
+
+apply plugin: 'application'
+mainClassName = 'ofedorova.ConfigServerApplication'

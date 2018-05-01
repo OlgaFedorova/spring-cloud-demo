@@ -4,3 +4,6 @@ dependencies {
     compile ("org.springframework.cloud:spring-cloud-starter-zuul")
     compile ("org.springframework.cloud:spring-cloud-starter-config")
 }
+
+apply plugin: 'application'
+mainClassName = 'ofedorova.GatewayServiceApplication'
