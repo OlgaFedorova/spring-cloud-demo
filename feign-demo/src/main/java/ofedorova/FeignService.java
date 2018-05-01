@@ -22,8 +22,8 @@ public class FeignService {
     }
 
     @GetMapping("/hello")
-    public String hello(AccountDto accountDto) {
-        return helloClient.message();
+    public String hello() {
+        return helloClient.message("Olga");
     }
 
     @GetMapping("/account")
