@@ -1,5 +1,6 @@
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-feign'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
 }
 
 bootRepackage.enabled = false
