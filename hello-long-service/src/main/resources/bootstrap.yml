@@ -1,0 +1,30 @@
+spring:
+  application:
+      name: hello-long-service
+
+---
+spring:
+  profiles: default
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      fail-fast: true
+      label: master
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      fail-fast: true
+      label: master
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      fail-fast: true
+      label: master
